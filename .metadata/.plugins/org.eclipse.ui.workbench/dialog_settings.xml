@@ -7,20 +7,15 @@
 		</list>
 	</section>
 	<section name="org.eclipse.ui.internal.QuickAccess">
-		<item key="dialogHeight" value="942"/>
-		<item key="dialogWidth" value="584"/>
+		<item key="dialogHeight" value="-1"/>
+		<item key="dialogWidth" value="-1"/>
 		<list key="orderedElements">
-			<item value="org.eclipse.ui.window.preferences(preferencePageId=org.eclipse.jdt.ui.preferences.BuildPathPreferencePage)"/>
 		</list>
 		<list key="orderedProviders">
-			<item value="org.eclipse.ui.commands"/>
 		</list>
 		<list key="textEntries">
-			<item value="2"/>
 		</list>
 		<list key="textArray">
-			<item value="build path"/>
-			<item value="build p"/>
 		</list>
 	</section>
 	<section name="WorkbenchPreferenceDialogSettings">
