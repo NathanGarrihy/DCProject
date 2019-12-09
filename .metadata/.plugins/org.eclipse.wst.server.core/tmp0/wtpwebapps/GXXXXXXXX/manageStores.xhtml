@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en"
+	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core">
+<h:head>
+	<title>Manage Stores</title>
+</h:head>
+
+<f:metadata>
+	<f:event listener="#{storeController.loadStores()}" type="preRenderView"></f:event>
+</f:metadata>
+
+	<a href="addStore.xhtml">
+	<button>Add Store</button>
+	</a>
+	<h:dataTable value="#{storeController.stores}" var="s">
+	<h:column> 
+	<f:facet name="header">Store ID</f:facet>
+	#{s.id}
+	</h:column>
+	<h:column> 
+	<f:facet name="header">Store Name</f:facet>
+	#{s.name}
+	</h:column>
+	<h:column> 
+	<f:facet name="header">Founded</f:facet>
+	#{s.founded}
+	</h:column>
+	<h:column> 
+	<f:facet name="header">Action</f:facet>
+<!-- 	<h:commandLink value="Show Products" action="storeDetails"/>SHOW PRODUCTS</h:commandLink> -->
+	SHOW PRODUCTS
+	</h:column>
+	</h:dataTable>
+	<!-- <table>
+	<tr bgcolor="lightblue">
+		<th>Store ID</th>
+		<th>Store Name</th>
+		<th>Founded</th>
+		<th>Action</th>
+	</tr>
+	<tr>
+  		<td>#{Store.id}</td>
+    	<td>#{Store.name}</td>
+    	<td>#{Store.founded}</td>
+    	<td><h:commandLink value="Show Products" action="storeDetails"/>SHOW PRODUCTS</h:commandLink></td>
+    	<td>DELETE</td>
+  	</tr>
+	</table> -->
+</html>
