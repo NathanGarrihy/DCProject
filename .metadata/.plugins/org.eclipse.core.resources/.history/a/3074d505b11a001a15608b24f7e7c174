@@ -10,41 +10,30 @@
 <f:metadata>
 	<f:event listener="#{storeController.loadStores()}" type="preRenderView"></f:event>
 </f:metadata>
-<h:outputStylesheet library="css" name="tables.css"/>
-
-<h:body>
 	<h:form>
-	
-	<h:commandButton value="Add Store" action="addStore" />
-	
-		<h:dataTable value="#{storeController.stores}" var="s"
-  		headerClass="table-header"
-		rowClasses="table-odd-row,table-even-row">
-		
+	<a href="addStore.xhtml">
+	<button>Add Store</button>
+	</a>
+	<h:dataTable value="#{storeController.stores}" var="s">
 	<h:column> 
 	<f:facet name="header">Store ID</f:facet>
 	#{s.id}
 	</h:column>
-	
 	<h:column> 
 	<f:facet name="header">Store Name</f:facet>
 	#{s.name}
 	</h:column>
-	
 	<h:column> 
 	<f:facet name="header">Founded</f:facet>
 	#{s.founded}
 	</h:column>
-	
 	<h:column> 
 	<f:facet name="header">Action</f:facet>
-	
 <!-- 	<h:commandLink value="Show Products" action="storeDetails"/>SHOW PRODUCTS</h:commandLink> -->
-	
+	SHOW PRODUCTS
 	</h:column>
 	</h:dataTable>
 	</h:form>
-	
 	<!-- <table>
 	<tr bgcolor="lightblue">
 		<th>Store ID</th>
@@ -60,5 +49,4 @@
     	<td>DELETE</td>
   	</tr>
 	</table> -->
-	</h:body>
 </html>

@@ -44,7 +44,7 @@
 	</h:column>
 	</h:dataTable>
 	</h:form>
-	
+	</h:body>
 	<!-- <table>
 	<tr bgcolor="lightblue">
 		<th>Store ID</th>
@@ -60,5 +60,4 @@
     	<td>DELETE</td>
   	</tr>
 	</table> -->
-	</h:body>
 </html>
